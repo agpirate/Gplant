@@ -1,0 +1,792 @@
+// app global css in SCSS form
+
+  //add Dark as plugin then acess it as ...
+  // @click="$q.dark.toggle()"
+  //this only work for defined class_variables..
+  .body--light {  //this work for light /dark mode
+    --q-primary: #010d55;
+    --q-secondary: #1537a7;
+    --q-accent: #cc00ff;
+  
+    --q-dark: #252525;
+    --q-light: #000000;
+    --q-dark-page: #252525;
+    --q-light-page: #000613;
+
+    --q-positive: #2aca50;
+    --q-negative: #c0051b;
+    --q-info: #00d0fa;
+    --q-warning: #ffbb00;
+
+
+    .text-sale{
+      color:blue($color: #d4a300)
+    };
+    .bg-sale{
+      color:blue($color: #ffffff);
+      background:rgb(218, 178, 0);
+    }
+
+    
+  }
+
+  .body--dark {   //this work for dark/light moode
+    --q-primary: #0044ff;
+    --q-secondary: #0030ce;
+    --q-accent: #cc00ff;
+  
+    --q-dark: #011029;
+    --q-light: #000000;
+    --q-dark-page: #000000;
+    --q-light-page: #000613;
+  
+    --q-positive: #0dbb35;
+    --q-negative: #c0051b;
+    --q-info: #00d0fa;
+    --q-warning: #ffbb00;
+
+  }
+
+  //---------------------------- ColorPlate Definitions
+
+  .bg-cplate-2{
+      background:rgb(255, 0, 0)
+    }
+  .bg-cplate-0{
+      background:rgb(0, 0, 0)
+    }
+  
+  .bg-cplate-1{
+      background:rgb(255, 0, 0)
+    }
+
+
+.cplate-6{
+  color:rgb(255, 0, 0)
+}
+.cplate-0{
+  color:rgb(0, 0, 0)
+}
+
+.cplate-1{
+  color:rgb(41, 243, 0)
+}
+.cplate-2{
+  color:rgb(0, 87, 248)
+}
+.cplate-3{
+  color:rgb(255, 255, 255)
+}
+.cplate-4{
+  color:rgb(19, 255, 204)
+}
+.cplate-5{
+  color:rgb(184, 6, 255)
+}
+.cplate-5{
+  color:rgb(255, 208, 0)
+}
+//----------------backdrop_filters
+.layout-Glass {
+  backdrop-filter: blur(25px);
+  background-color: rgba(255, 255, 255, 0);
+  color: $grey-9;
+  font-family:  Ubuntu,Helvetica, sans-serif;
+}
+
+ .overlay-Glass {
+  backdrop-filter: blur(85px);
+  background-color: rgb(255, 255, 255);
+  color: $grey-9;
+  font-family:  Ubuntu,Helvetica, sans-serif;
+}
+.overlay-Glass:before {
+  background: inherit;
+}
+.overlay-GlassDark {
+  background: inherit;
+}
+
+.iserviceMenuu-Glass {
+  backdrop-filter: blur(16px);//better works when background_has transparency
+  background-color: rgba(0, 0, 250, 0.233);
+  color: $grey;
+
+  font-family:  Ubuntu,'apple-system', BlinkMacSystemFont, 'Segoe UI';
+ }
+ .saleitContent-Glass {
+  backdrop-filter: blur(3px);
+  background-color: rgb(100, 91, 6);
+
+  width:max-content;
+  border:1px solid rgb(117, 117, 117);
+  max-width:100%;
+
+  border-radius: 4px;
+  border: 0px solid rgba(255, 255, 255, 0.301);
+  font-family: Ubuntu,'apple-system', BlinkMacSystemFont, 'Segoe UI';
+  text-transform: capitalize;
+ }
+
+ .saleitHeader-Glass {
+  backdrop-filter: blur(1px);
+  background-color: rgba(255, 187, 0, 0.781);
+
+  border-radius: 4px;
+  border: 0.02px solid rgba(255, 255, 255, 0.295);
+  font-family:  Ubuntu,Helvetica, sans-serif;
+  padding: 0.5vh;
+ }
+
+ .saleitContentOps-Glass {
+  backdrop-filter: blur(3px);
+  background-color: rgba(216, 212, 195, 0.685);
+  color: rgb(0, 0, 0);
+
+  border:1px solid red;
+  max-width:100%;
+  padding: 0.5vh;
+  
+  border-radius: 7%;
+  border: 0.02px solid rgba(255, 255, 255, 0.295);
+  font-family: 'apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: .7rem;
+ }
+
+ .fontastyle{
+  font-family: Ubuntu,Helvetica,sans-serif;
+  font-size: .8rem;
+  color: $grey-10;
+
+  border-radius: 5px;
+  font-weight: bolder;
+ }
+
+ .fontbstyle{ 
+  font-family:  Ubuntu,Helvetica;
+  font-size: .9rem;
+  color: $grey-10;
+ }
+
+ .fontcstyle{
+  font-family:  Ubuntu,Helvetica;
+  font-size: 1rem;
+  color: grey;
+  font-weight: bold;
+ }
+ .fontcstyle :hover{
+  color: rgb(0, 65, 243);
+ }
+ .fontdstyle{
+  font-family:  Ubuntu,Helvetica, sans-serif;
+  font-size: 1.1rem;
+  color: rgb(53, 53, 53);
+  font-weight: bolder;
+ }
+ .fontestyle{
+  font-family:  Ubuntu,Helvetica;
+  font-size: 1.2rem;
+  color: rgb(53, 53, 53);
+  font-weight: bolder;
+ }
+//----------
+.boxastyle{
+  font-family:  Ubuntu,Helvetica, sans-serif;
+  font-size: 1.1rem;
+  font-weight: bolder;
+
+  color: rgb(255, 255, 255);
+  background: rgb(18, 37, 99);
+  box-shadow: inset;
+  border-radius: 6px;
+  
+  padding: 0.5vh;
+  box-shadow:#fffafa;
+  // margin:5%;
+
+  // min-height:5vh;
+   min-width:5vh;
+
+ }
+ .boxbstyle{
+  font-family:  Ubuntu,Helvetica, sans-serif;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  
+  color: rgb(48, 46, 46);
+  background: rgb(248, 248, 250);
+  border-radius: 4px;
+  
+  padding: 1vw;
+  box-shadow:#0c0c0c;
+  // margin:5%;
+ }
+
+ .boxcstyle{
+  font-family:  Ubuntu,Helvetica, sans-serif;
+  font-size: 1.1rem;
+  font-weight: bolder;
+
+  color: rgb(255, 255, 255);
+  backdrop-filter: blur(25px);
+  background: rgba(0, 0, 0, 0.795);
+
+  display:flex;flex-flow:column wrap;gap:1%;
+
+  box-shadow: inset;
+  border-radius: 6px;
+  padding: 1vw;
+  // margin:5%;
+ }
+
+ .boxvalidStyle{  //floating element
+
+  position:absolute;
+  top:-15px;
+  
+  font-family: Ubuntu,Helvetica,sans-serif;
+  font-size: .7rem;
+  color:red;
+ }
+
+
+ //--------dialoges
+ .dialogConfirm{
+  position:fixed;
+  top:0px;
+
+  width:100vw;
+  height:100vh;
+
+  backdrop-filter: blur(1px);
+  background-color: rgba(0, 0, 0, 0.719);
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  gap:1%;
+
+  border-radius:7px;
+ }
+
+ .dialoga{
+  position:fixed;
+  top:0px;
+
+  width:100vw;
+  height:100vh;
+
+  backdrop-filter: blur(1px);
+  background-color: rgba(0, 0, 0, 0.719);
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  gap:1%;
+
+  border-radius:7px;
+ }
+
+ .dialogb{
+  position:fixed;
+  top:0px;
+
+  width:100vw;
+  height:100vh;
+
+  backdrop-filter: blur(10px);
+  background-color: rgba(155, 146, 146, 0.719);
+
+  display: flex;
+  
+  justify-content: center;
+  align-content: center;
+  gap:1%;
+
+  border-radius:7px;
+ }
+ 
+ //------------positioning Box and styling
+ .leftmidBox{
+  position:fixed;
+  top:40%
+ }
+
+ .bottomtip{
+  display:none;
+ }
+ .bottomtip :hover{
+  position:relative;
+  display:flex;flex-flow: row nowrap;gap:1vh;
+  min-width: 1vh;
+  top:5%
+ }
+
+
+ //----------Cards...
+ .cardinf {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+.cardinf img {
+  width: 100%;
+}
+.cardinf-content {
+  padding: 20px;
+}
+.cardinf-title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+.cardinf-text {
+  font-size: 16px;
+  color: #666;
+}
+.cardinf-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.cardinf-button:hover {
+  background-color: #0056b3;
+}
+
+
+.cardPL {
+  font-family:  Ubuntu,Helvetica, sans-serif;
+  font-size: 1rem;
+  color: black;
+  background: whitesmoke;
+  box-shadow: inset;
+  border-radius: 6px;
+  padding: 5px;
+  box-shadow:#555;
+
+  min-height:5vh;
+}
+.cardPL img {
+  width: 100%;
+}
+.cardPL-content {
+  padding: 20px;
+}
+.cardPL-title {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.cardPL-price {
+  font-size: 18px;
+  color: #e67e22;
+}
+.cardPL-description {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+}
+.cardPL-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 0px 0px;
+  border-radius: 15px;
+  background-color: #0b7a39;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+.cardPL-button:hover {
+  background-color: #219150;
+}
+
+
+.product-card {
+  font-family:  Ubuntu,Helvetica, sans-serif;
+  background: #fff;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  overflow: hidden;
+  overflow:scroll;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  // width: calc(33.333% - 20px);
+  max-height:60vh;
+  max-width: 60vw;
+  min-width: 30vw;
+  // text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  display: flex;
+  flex-flow:column nowrap;
+  gap:5px;
+  padding: 1px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card h4,h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-card p {
+  // font-size: 16px;
+  // font-weight: bold;
+  margin:0px;
+  color: #666;
+  max-width: 50%;
+  min-height:auto;
+  overflow: scroll;
+  text-overflow: ellipsis;
+}
+
+.product-card button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+  background: #0056b3;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .product-card {
+      width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+      width: calc(100% - 20px);
+  }
+}
+
+
+
+// ------
+.cardPopDetails {
+  font-family:  Ubuntu,Helvetica, sans-serif;
+  font-size: 1rem;
+  color: black;
+  background: whitesmoke;
+  box-shadow: inset;
+
+  border-radius: 5px;
+  // min-height:5vh;
+  max-height:60vh;
+
+  max-width: 40vw;
+  min-width: 30vw;
+
+  overflow:scroll;
+
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  display: flex;
+  flex-flow:column nowrap;
+  gap:1px;
+  padding: 5px;
+  // margin:5px;
+}
+.cardPopDetails img {
+  width: 100%;
+}
+.cardPopDetails-content {
+  max-width: 100%;
+  min-height: 2vh;
+  overflow: scroll;
+  text-overflow: ellipsis;
+
+  font-family: Ubuntu;
+  font-size: 0.8rem;
+  // padding: 20px;
+}
+.cardPopDetails-title {
+  max-width: 100%;
+  min-height: 2vh;
+  overflow:hidden;
+  text-overflow: ellipsis;
+
+  font-size: 1rem;
+  margin: 5px 0;
+  font-weight: bold;
+}
+.cardPopDetails-meta {
+  max-width: 100%;
+  min-height: 2vh;
+  overflow:hidden;
+  text-overflow: ellipsis;
+
+  font-size: 0.7rem;
+  margin: 1px 0;
+  padding: 0px;
+  // font-weight: bold;
+}
+.cardPopDetails-items {
+
+  font-family:  Ubuntu,Helvetica, sans-serif;
+  font-size: 1rem;
+  color: black;
+  background: whitesmoke;
+  box-shadow: inset;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow:#555;
+  // font-size: 0.6rem;
+  // margin: 5px 0;
+
+  display: flex;
+  flex-flow: row nowrap;
+  gap:7px;
+  // font-weight: bold;
+}
+
+.cardPopDetails-price {
+  font-size: 18px;
+  color: #e67e22;
+}
+.cardPopDetails-description {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+}
+.cardPopDetails-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 0px 0px;
+  border-radius: 15px;
+  background-color: #0b7a39;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+.cardPopDetails-button:hover {
+  background-color: #219150;
+}
+//------------------cplate Definitions as class
+
+.triShapeU{
+  min-width: 1vw;
+  min-height: 1vw;
+  background: rgb(1, 255, 1);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+}
+.triShapeD{
+  min-width: 1vw;
+  min-height: 1vw;
+  background: rgb(255, 0, 0);
+  clip-path: polygon(50% 100%, 0% 0%,100% 0%);
+}
+//-------------------LayOut Wall - Global Styling
+
+.WAL{
+  width: 100%;
+  height: 100%;
+  padding-top: 0px;
+  padding-bottom: 3em;
+
+  &::before // sset the wall_Style & before any child tage draw this style
+  {
+    height: 10vh;
+    position: fixed;
+    content: '';
+    top: 0;
+    width: 100%;
+    //background-color: #0077ff;
+  }
+
+  &__layout{
+
+    margin: 0 auto;
+   
+    height: 100%;   
+    width: 100%;
+    max-width: 100vw;
+    border-radius: 2px;
+  }
+
+  .q-drawer--standard
+  {
+      .WAL__drawer-close
+    {
+        display: none;
+        
+    }
+  }
+  
+
+}
+  
+      
+@media (max-width: 850px) {//for screen size of below 850px  
+  .WAL
+  {
+    padding: 0;
+ 
+    &__layout{
+
+      margin: 0 auto;
+      padding: 0px;
+      z-index: 4000;
+      height: 100%;   
+      width: 100%;
+      max-width: 70vw;
+      border-radius: 5px;
+    }
+}
+}
+//---------------------------Replacing marquee with keyFrams animator
+.marqueeBox {
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: 100vw;
+  line-height: 50px;
+	background-color: red;
+	color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.marquee {
+  display: inline-block;
+  min-width: 100vw;
+  animation: scroll 30s linear infinite; /* Adjust speed as needed */
+}
+
+@keyframes scroll {
+  0% {transform: translateX(100%);
+  }
+  100% {transform: translateX(-100%);
+  }
+}
+
+//------------scrollarea
+//This is a very long text that should be truncated with an ellipsis after a few lines to fit within the fixed height of the container. This ensures that the text does not overflow and maintains a clean appearance.
+
+.ellipsis-mline {
+  width: 300px; /* Set a fixed width */
+  height: 60px; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow */
+  display: -webkit-box; /* Use for webkit browsers */
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  -webkit-box-orient: vertical; /* Orientation */
+  text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+  border: 1px solid #000;
+  padding: 10px;
+  line-height: 1.5; /* Adjust line height for readability */
+}
+//This is a very long text that should be truncated with an ellipsis if it exceeds the width of the container.
+
+.ellipsis-sline {
+  width: 300px; /* Set a fixed width */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+  border: 1px solid #000;
+  padding: 10px;
+  line-height: 1.5;
+
+}
+//Allow vertical scrolling when the text exceeds the container height.
+.scroll-contvertical {
+  width: 300px; /* Set a fixed width */
+  height: 150px; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #000;
+  padding: 10px;
+  line-height: 1.5;
+
+}
+//Allow horizontal scrolling when the text exceeds the container width.
+.scroll-conthorizontal {
+  width: 300px; /* Set a fixed width */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  border: 1px solid #000;
+  padding: 10px;
+  line-height: 1.5;
+
+}
+//Ensure text breaks into multiple lines to fit within a fixed container height.
+.fixed-height-auto-break {
+  width: 300px; /* Set a fixed width */
+  height: 150px; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow */
+  border: 1px solid #000;
+  padding: 10px;
+  word-wrap: break-word; /* Break words to fit the width */
+  line-height: 1.5;
+
+}
+.boxbreakStyle{  //set width/height and make overflow to be break in new line
+  //---------------NB: width/hieght could be settted on template (optional)
+  // width:200px;
+  word-wrap: break-word;
+
+  overflow:hidden;
+
+  line-height: 1.5;
+ }
+ .boxellipseStyle{  //set width/height and make overflow to be ellipsed with in the box
+  //---------------NB: width/hieght could be settted on template (optional)
+  // width:200px;
+  // height:200px;
+  // word-wrap: break-word;
+  white-space: nowrap;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  line-height: 1.5;
+ }
+
+.scroll-area {
+  width: 100%; /* Full width */
+  //height:20vh /* height need to be Fixed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  box-sizing: content-box; /* Set box-sizing to content-box to prevent scrollbar from affecting width */
+
+  padding-right: 15px; /* Add a padding to prevent content from overlapping the scrollbar */
+  padding-bottom: 150px; /* Add a padding to prevent content from overlapping the scrollbar */
+}
+
+/* Optional: Customize scrollbar */
+.scroll-area::-webkit-scrollbar {
+  width: 20px;
+}
+
+.scroll-area::-webkit-scrollbar-thumb {
+  background-color: #c7c7c7;
+}
+
+.scroll-area::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+legend::first-letter {
+    text-transform:capitalize;
+}
